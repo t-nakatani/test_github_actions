@@ -16,8 +16,8 @@ jobs:
           host: ${{ secrets.SERVER_HOST }}
           username: ${{ secrets.USERNAME }}
           port: ${{ secrets.SSH_PORT }}
-#           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          password: ${{ secrets.PASSWORD }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+#           password: ${{ secrets.PASSWORD }}
           script: |
             cd ${{ secrets.SERVER_DEPLOY_DIR }}
             git pull origin main
